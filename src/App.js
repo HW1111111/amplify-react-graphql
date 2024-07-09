@@ -141,6 +141,8 @@ const App = ({signOut}) => {
             <Button onClick={signOut}>Sign Out</Button>
         </View>
     );
+
+
 };
 
 export default withAuthenticator(App);
