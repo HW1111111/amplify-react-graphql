@@ -59,7 +59,7 @@ const App = ({signOut}) => {
         };
         if (!!data.image) await Storage.uploadData({
             data: image,
-            path: image.name
+            path: data.image
         });
         await client.graphql({
             query: createNoteMutation,
